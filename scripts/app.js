@@ -39,7 +39,9 @@ let LeadersTable = React.createClass({
   	let data = this.state.results.map((item, i) =>
   	  <tr>
   	    <td className="position"><p>{i+1}</p></td>
-  	    <td className="user"><img src={item.img}/>{item.username}</td>
+        <td className="user">
+    		  <a href={"https://github.com/" + item.username} target="_blank"><img src={item.img}/>{item.username}</a>
+    		</td>
   	    <td className="last-month">{item.recent}</td>
   	    <td className="all-time">{item.alltime}</td>
   	  </tr>

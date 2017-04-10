@@ -29,11 +29,15 @@ body {
     body table tr .user {
       text-align: left;
       padding-left: 0; }
-      body table tr .user img {
-        vertical-align: middle;
-        width: 2em;
-        height: 2em;
-        margin-right: 0.2em; }
+      body table tr .user a {
+        text-decoration: none;
+        color: inherit;
+        outline: none; }
+        body table tr .user a img {
+          vertical-align: middle;
+          width: 2em;
+          height: 2em;
+          margin-right: 0.2em; }
     body table tr:nth-child(2) .position p, body table tr:nth-child(3) .position p, body table tr:nth-child(4) .position p {
       width: 1.6em;
       padding-top: 0.2em;
