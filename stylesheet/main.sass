@@ -1,0 +1,66 @@
+$dark-red: #3f2728
+$dark-green: #003300
+body
+  padding-bottom: 1em
+  font-family: 'Bree Serif', serif
+  background: #ffff4d
+  color: $dark-red
+  h1
+    margin-top: .2em
+    color: $dark-green
+    font:
+      family: 'Passion One', cursive
+      size: 2.5em
+      weight: normal
+  table
+    width: 75%
+    margin: 0 auto
+    border-collapse: collapse
+    text-align: center
+    tr
+      th, td
+        padding:
+          right: .3em
+          left: .3em
+      th
+        padding-bottom: .7em
+        border-bottom: solid 4px $dark-green
+        &:nth-child(3), &:nth-child(4)
+          cursor: pointer
+      &:not(:last-child)
+        td
+          border-bottom:
+            style: solid
+            width: 1px
+            color: gray
+      .user
+        text-align: left
+        padding-left: 0
+        img
+          vertical-align: middle
+          width: 2em
+          height: 2em
+          margin-right: .2em
+      &:nth-child(2), &:nth-child(3), &:nth-child(4)
+        .position
+          p
+            width: 1.6em
+            padding:
+              top: .2em
+              bottom: .2em
+            margin: 0 auto
+            border:
+              style: solid
+              radius: 50%
+        .user
+          min-width: 9.7em
+          font-size: 1.4em
+          color: #004080
+
+@media screen and (min-width: 790px)
+  tr
+    .user
+      font-size: 1.2em
+    &:nth-child(2), &:nth-child(3), &:nth-child(4)
+      .user
+        font-size: 1.8em !important
