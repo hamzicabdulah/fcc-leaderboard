@@ -46,8 +46,7 @@ body {
       border-style: solid;
       border-radius: 50%; }
     body table tr:nth-child(2) .user, body table tr:nth-child(3) .user, body table tr:nth-child(4) .user {
-      min-width: 9.7em;
-      font-size: 1.4em;
+      font-size: 1.2em;
       color: #004080; }
 
 @media screen and (min-width: 790px) {
